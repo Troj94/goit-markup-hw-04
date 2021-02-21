@@ -5,6 +5,16 @@ Document
 ========
 */
 
+a {
+	background-color: transparent;
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+	padding: 0px;
+}
+
 /**
 Use a better box model (opinionated).
 */
