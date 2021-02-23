@@ -4,4 +4,8 @@
     --white-text: rgba(255, 255, 255, 1);
     --grey-text: rgba(117, 117, 117, 1);
     --grey-address-text: rgba(255, 255, 255, 0.6);
+    --grey-bcg: rgba(245, 244, 250, 1);
+    --grey-clients-border: rgba(175, 177, 184, 1);
+    --grey-socials: rgba(175, 177, 184, 1);
+
 }
