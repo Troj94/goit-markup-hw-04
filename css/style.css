@@ -2,11 +2,6 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.body svg {
-    margin: 0;
-    text-align: center;
-}
-
 .container {
     width: 1200px;
     padding: 0 15px;
@@ -88,6 +83,22 @@ body {
     margin-right: 40px;
 }
 
+.header-list svg {
+    display: flex;
+    margin: 0 10px 0 0;
+    fill: currentColor;
+    align-content: center;
+}
+
+.header-list:last-child {
+    margin-right: 0;
+}
+
+.contacts-text svg:hover {
+    color: var(--blue-text);
+    fill: currentColor;
+}
+
 .link-block {
     display: flex;
     padding-top: 32px;
@@ -99,19 +110,10 @@ body {
     padding-top: 32px;
     padding-bottom: 32px;
 
+    align-items: center;
+
     color: var(--grey-text);
     font-size: 14px;
-}
-
-.header-list svg {
-    display: flex;
-    margin: 0 10px 0 0;
-    fill: var(--grey-text);
-    align-content: center;
-}
-
-.header-list:last-child {
-    margin-right: 0;
 }
 
 /* Герой */
@@ -290,9 +292,8 @@ body {
 
 .social-links {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 
-    margin: 0;
     padding-top: 28px;
     padding-bottom: 12px;
 }
@@ -301,29 +302,36 @@ body {
     width: 20px;
     height: 20px;
     fill: var(--grey-socials);
-
-    margin-top: 12px;
 }
 
 .social-links svg:hover,
 .social-links svg:focus {
     fill: var(--white-text);
     background-color: var(--blue-text);
-
-
 }
 
 .social-circle {
-    margin: 0;
+    margin: 0 10px 0 0;
     padding: 0;
 
-    text-align: center;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     width: 44px;
     height: 44px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
+}
+
+.social-circle a {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.social-circle:last-child {
+    margin: 0;
 }
 
 .social-circle:hover,
@@ -400,11 +408,17 @@ body {
     width: 170px;
     height: 90px;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     margin-right: 30px;
 
     border: 1px solid var(--grey-clients-border);
     box-sizing: border-box;
     border-radius: 4px;
+
+    color: var(--grey-socials);
 }
 
 .clients-card:last-child {
@@ -415,18 +429,20 @@ body {
 .clients-card:focus {
     border: 1px solid var(--blue-text);
     cursor: pointer;
+    color: var(--blue-text);
 }
 
 .client-icon {
     display: flex;
-    margin: auto;
-    fill: var(--grey-socials);
+    justify-content: center;
+    align-content: center;
+
+    fill: currentColor;
 }
 
 .client-icon:hover,
 .client-icon:focus {
-    fill: var(--blue-text);
-
+    fill: currentColor;
 }
 
 /* Подвал */
@@ -445,6 +461,7 @@ body {
     padding: 0 15px;
     margin: 0 auto;
     display: flex;
+    height: 132px;
 }
 
 .footer-logo {
@@ -456,7 +473,6 @@ body {
     font-weight: bold;
     font-size: 26px;
     line-height: 31px;
-
 }
 
 .footer-address {
@@ -487,7 +503,7 @@ body {
 .footer-social {
     width: 206px;
     height: 80px;
-    margin: 0 0 0 70px;
+    margin: 15px auto 97px 70px;
 }
 
 .footer-social-title {
@@ -495,6 +511,10 @@ body {
     font-size: 14px;
     color: var(--white-text);
     margin: 0;
+}
+
+.footer-links {
+    padding-top: 20px;
 }
 
 .footer-links svg {
