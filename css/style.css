@@ -119,13 +119,17 @@ body {
 /* Герой */
 
 .hero {
+    max-width: 1600px;
+    height: 600px;
+
     margin: 0 auto;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url("../img/background-hero.jpg");
-    background-color: rgba(47, 48, 58, 0.4);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url("../img/background-hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .hero-title {
@@ -290,55 +294,6 @@ body {
     letter-spacing: 0.03em;
 }
 
-.social-links {
-    display: flex;
-    justify-content: center;
-
-    padding-top: 28px;
-    padding-bottom: 12px;
-}
-
-.social-links svg {
-    width: 20px;
-    height: 20px;
-    fill: var(--grey-socials);
-}
-
-.social-links svg:hover,
-.social-links svg:focus {
-    fill: var(--white-text);
-    background-color: var(--blue-text);
-}
-
-.social-circle {
-    margin: 0 10px 0 0;
-    padding: 0;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 44px;
-    height: 44px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-}
-
-.social-circle a {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-}
-
-.social-circle:last-child {
-    margin: 0;
-}
-
-.social-circle:hover,
-.social-circle:focus {
-    background-color: var(--blue-text);
-}
-
 .team-list {
     display: flex;
     margin-top: 0;
@@ -372,9 +327,7 @@ body {
 }
 
 .team-title {
-    margin: 0;
-
-    padding-bottom: 10px;
+    margin: 0 0 10px 0;
 
     text-align: center;
 
@@ -385,7 +338,7 @@ body {
 }
 
 .team-proffesion {
-    margin: 0;
+    margin: 0 0 16px 0;
 
     color: var(--grey-text);
 
@@ -395,6 +348,51 @@ body {
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.03em;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social-links svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--grey-socials);
+}
+
+.social-circle {
+    margin: 0 10px 0 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.social-circle a {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.social-circle:last-child {
+    margin: 0;
+}
+
+.social-circle:hover,
+.social-circle:focus {
+    background-color: var(--blue-text);
+}
+
+.social-circle svg:hover,
+.social-circle svg:focus {
+    fill: var(--white-text);
 }
 
 /* Постоянные клиенты */
@@ -500,10 +498,8 @@ body {
     color: var(--grey-address-text);
 }
 
-.footer-social {
-    width: 206px;
-    height: 80px;
-    margin: 15px auto 97px 70px;
+.footer-block {
+    margin-right: 70px;
 }
 
 .footer-social-title {
