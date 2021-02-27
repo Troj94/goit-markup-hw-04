@@ -23,6 +23,7 @@ body {
     padding: 0 15px;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
 }
 
 .logo {
@@ -350,49 +351,44 @@ body {
     letter-spacing: 0.03em;
 }
 
-.social-links {
+.socials-list {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0;
 }
 
-.social-links svg {
-    width: 20px;
-    height: 20px;
+.social-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+
+    background-color: var(--white-text);
+    border-radius: 50%;
     fill: var(--grey-socials);
 }
 
-.social-circle {
-    margin: 0 10px 0 0;
-    padding: 0;
+.social-link:hover,
+.social-link:focus {
+    background-color: var(--blue-text);
+    fill: var(--white-text);
+}
 
+.social-link svg {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    width: 44px;
-    height: 44px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-}
-
-.social-circle a {
-    display: inline-block;
     width: 20px;
     height: 20px;
-}
-
-.social-circle:last-child {
-    margin: 0;
-}
-
-.social-circle:hover,
-.social-circle:focus {
-    background-color: var(--blue-text);
-}
-
-.social-circle svg:hover,
-.social-circle svg:focus {
-    fill: var(--white-text);
 }
 
 /* Постоянные клиенты */
@@ -460,11 +456,18 @@ body {
     margin: 0 auto;
     display: flex;
     height: 132px;
+    align-items: baseline;
+}
+
+.footer-block {
+    margin-right: 70px;
 }
 
 .footer-logo {
     font-family: 'Raleway', sans-serif;
     display: block;
+
+    margin-bottom: 20px;
 
     color: var(--white-text);
     text-decoration: none;
@@ -498,22 +501,18 @@ body {
     color: var(--grey-address-text);
 }
 
-.footer-block {
-    margin-right: 70px;
-}
-
 .footer-social-title {
     text-transform: uppercase;
     font-size: 14px;
     color: var(--white-text);
-    margin: 0;
+    margin: 0 0 20px 0;
 }
 
-.footer-links {
-    padding-top: 20px;
+.footer-social-link {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer-links svg {
+.footer-social-link svg {
     fill: var(--white-text);
 }
 
